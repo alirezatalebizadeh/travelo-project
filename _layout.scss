@@ -10,6 +10,108 @@
     align-items: center;
 }
 
+body {
+    background-color: aliceblue
+}
+
+@mixin center($number) {
+    left: 50%;
+    top: $number;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    margin: 10px 0;
+    font-size: 30px;
+
+    @media (max-width:1200px) {
+        font-size: 25px;
+    }
+
+    @media (max-width:992px) {
+        font-size: 20px;
+    }
+    @media (max-width:700px) {
+        font-size: 15px;
+    }
+    @media (max-width:500px) {
+        font-size: 13px;
+    }
+
+    img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        object-fit: fiil;
+    }
+
+    &-about {
+        position: absolute;
+        z-index: 10;
+        @include center(50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -42,7 +144,7 @@
         }
 
         @media (min-width: 1200px) {
-            width: 45%;
+            width: 40%;
         }
 
         .img-logo {
@@ -50,6 +152,9 @@
         }
 
         .list {
+            &-item {
+                line-height: 25px;
+            }
 
             &-link {
                 display: block;
@@ -60,9 +165,15 @@
 
     &-footer {
         width: 70%;
+
         @media (min-width: 992px) {
             width: 35%;
         }
+
+        @media (min-width:1200px) {
+            width: 30%;
+        }
+
 
         .list {
             @media (min-width: 992px) {
@@ -72,6 +183,7 @@
             &-item {
                 display: inline-block;
                 width: 49%;
+                line-height: 30px;
 
                 @media (min-width:355px) {
                     width: 40%;
