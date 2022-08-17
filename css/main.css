@@ -1,0 +1,99 @@
+@font-face {
+  font-family: IranNastaliq;
+  src: url("/fonts/IranNastaliq.eot") format("eot"), url("/fonts/IranNastaliq.ttf") format("ttf"), url("/fonts/IranNastaliq.woff") format("woff");
+  font-weight: 500;
+}
+.footer {
+  background-color: #040E27;
+  font-size: 20px;
+}
+.footer-footer {
+  margin-top: 20px;
+}
+.footer .list-link {
+  color: rgb(189, 188, 186);
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+.footer .name {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+@media (max-width: 450px) {
+  .footer {
+    padding: 20px 5px;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    padding: 50px;
+  }
+}
+.footer-header {
+  width: 70%;
+}
+@media (min-width: 992px) {
+  .footer-header {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-header {
+    width: 45%;
+  }
+}
+.footer-header .img-logo {
+  width: 200px;
+}
+.footer-header .list-link {
+  display: block;
+  letter-spacing: 1px;
+}
+.footer-footer {
+  width: 70%;
+}
+@media (min-width: 992px) {
+  .footer-footer {
+    width: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-footer .list {
+    width: 400px;
+  }
+}
+.footer-footer .list-item {
+  display: inline-block;
+  width: 49%;
+}
+@media (min-width: 355px) {
+  .footer-footer .list-item {
+    width: 40%;
+  }
+}
+.footer-footer .list-link {
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+}
+.footer .list {
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */
