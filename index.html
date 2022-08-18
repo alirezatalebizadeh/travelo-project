@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/main.css">
@@ -13,10 +15,82 @@
 
 <body>
 
+    <input type="checkbox" id="check" class="checkbox" hidden>
+
+    <section class="header">
+        <div class="logo">
+            <a href="#"><img src="/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Which country are you looking for?">
+                <a href="#" class="search-btn">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </a>
+            </div>
+
+        </div>
+        <div class="menu-btn">
+            <label for="check">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </label>
+        </div>
+    </section>
+
+    <div class="menu-minscreen">
+        <ul id="left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <section class="banner">
+        <div class="banner-text">
+            <h2 class="text-location">Australia</h2>
+            <p>Pixel perfect design with awesome contents</p>
+            <button class="btn-banner">Explore Now</button>
+        </div>
+    </section>
+
     <main>
 
+
+
+        <section class="location">
+            <h4 class="name">Where you want to go?</h4>
+            <div class="form">
+                <input type="text" placeholder="where to go?">
+                <input type="text" placeholder="where to go?">
+                <input type="text" placeholder="where to go?">
+                <button class="btn-search">Search</button>
+            </div>
+        </section>
+
         <section>
-            <section></section>
+            <section class="main-header">
+                <h2 class="header-name">Popular Destination</h2>
+                <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella
+                    wolf moon beard words.</p>
+            </section>
             <section class="main-card">
                 <article>
                     <img src="/images/1.png" alt="">
@@ -82,8 +156,6 @@
         </section>
     </main>
 
-
-
     <footer class="footer">
         <div class="footer-header">
             <img src="/images/footer_logo.png" alt="footer-logo" class="img-logo">
@@ -108,6 +180,16 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        let elem = document.getElementById("left");
+        let value = elem.style.left;
+        let value_result = value.value;
+        let min_width = document.style.min_width = 992;
+        if (value_result > min_width) {
+            elem.style.left = 0;
+        }
+    </script>
 </body>
 
 </html>
