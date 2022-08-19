@@ -57,6 +57,9 @@
   transform: scale(1.07);
 }
 
+.header {
+  font-size: 20px;
+}
 .header .search .search-input {
   outline: none;
   border: none;
@@ -64,13 +67,13 @@
   padding: 0;
   float: left;
   color: rgb(92, 90, 90);
-  font-size: 16px;
+  font-size: 0.7em;
   transition: 0.3s all;
   line-height: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .header .search .search-input::placeholder {
-  font-size: 15px;
+  font-size: 0.8em;
 }
 .header .search .search-input:hover, .header .search .search-input:focus {
   border: 1px solid #371fc0;
@@ -91,20 +94,19 @@
 }
 .header .search .search-input:focus,
 .header .search .search-input:hover .search-input:not(:placeholder-shown) {
-  width: 290px;
+  width: 240px;
   padding: 0 10px;
 }
 .header .search .search-box:hover > .search-input {
-  width: 290px;
+  width: 240px;
   padding: 0 10px;
 }
 .header .menu ul {
-  font-size: 25px;
   list-style-type: none;
 }
 @media (max-width: 1200px) {
   .header .menu ul {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media (max-width: 720px) {
@@ -171,7 +173,7 @@
 }
 .banner .btn-banner {
   border: none;
-  padding: 0px 35px;
+  padding: 10px 35px;
   font-family: IranNastaliq;
   font-size: 0.7em;
   border-radius: 10px;
@@ -302,7 +304,7 @@
   font-weight: 500;
   font-size: 1.3em;
   font-family: IranNastaliq;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 .Newsletter .info {
   color: rgb(172, 168, 168);
@@ -312,7 +314,7 @@
   margin-bottom: 10px;
 }
 .Newsletter .input {
-  padding: 10px;
+  padding: 20px;
   border: none;
   outline: none;
   height: 40px;
@@ -505,7 +507,7 @@ body {
 .banner {
   background: url("/images/banner2.png") no-repeat left;
   background-size: cover;
-  height: 50vw;
+  height: 60vw;
 }
 .banner-text {
   display: flex;
@@ -524,7 +526,7 @@ body {
   .location {
     flex-direction: row;
     justify-content: space-around;
-    padding: 30px;
+    padding: 60px 30px;
   }
 }
 .location .form {
@@ -602,10 +604,10 @@ body {
   background: url("/images/newsletter.png") no-repeat 65%;
   background-size: cover;
   width: 100vw;
-  height: 300px;
   position: relative;
   font-size: 22px;
   margin-top: 10px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -646,6 +648,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 100;
+  padding: 30px 0;
 }
 @media (min-width: 1200px) {
   .Newsletter-text {
